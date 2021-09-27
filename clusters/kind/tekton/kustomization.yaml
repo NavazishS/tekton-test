@@ -3,6 +3,7 @@ commonLabels:
   app: tests
 namespace: default
 resources:
+  - task-test.yaml
   - pipeline-test.yaml
   - pipeline-run-test.yaml
-  - task-test.yaml
+  

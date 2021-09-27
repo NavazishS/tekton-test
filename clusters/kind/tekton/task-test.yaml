@@ -6,6 +6,7 @@ metadata:
   labels:
     app.kubernetes.io/instance: tekton-pipeline
     app.kubernetes.io/component: controller
+    app: tests
 spec:
   steps:
     - name: test-function
