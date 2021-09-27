@@ -1,6 +1,6 @@
 ---
 commonLabels:
-  app: tests
+  app: podinfo
 namespace: default
 resources:
   - task-test.yaml
