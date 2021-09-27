@@ -3,6 +3,7 @@ commonLabels:
   app: podinfo
 namespace: default
 resources:
+  - serviceaccount.yaml
   - task-test.yaml
   - pipeline-test.yaml
   - pipeline-run-test.yaml
