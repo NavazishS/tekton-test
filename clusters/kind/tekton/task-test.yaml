@@ -1,0 +1,16 @@
+---
+apiVersion: tekton.dev/v1beta1
+kind: Task
+metadata:
+  name: task-test
+  labels:
+    app.kubernetes.io/instance: tekton-pipeline
+    app.kubernetes.io/component: controller
+spec:
+  steps:
+    - name: test-function
+      image: bitnami/kubectl
+      script: |
+        echo "----Start Get POD status Test Function---"
+        kubectl get po -A | grep pod  | grep Running
+        echo "----End Get---"

@@ -1,0 +1,8 @@
+---
+commonLabels:
+  app: tests
+namespace: default
+resources:
+  - pipeline-test.yaml
+  - pipeline-run-test.yaml
+  - task-test.yaml
